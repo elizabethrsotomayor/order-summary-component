@@ -1,0 +1,150 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: rgba(202, 205, 245, 0.507);
+}
+
+h1 {
+    font-weight: 900;
+}
+
+/* STYLING CONTAINER AND OVERALL CONTENT */
+.wrapper {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontal alignment */
+    position: relative;
+    overflow: hidden;
+}
+
+.container--content {
+    align-self: center; /* vertical alignment */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1.6rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width:35%;
+    margin-bottom: 1.2rem;
+    margin-top: 4.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.summary-heading {
+    padding-top: 3.6rem;
+    padding-bottom: 1.2rem;
+}
+
+.summary-description {
+    font-size: 1.6rem;
+    width:67%;
+    line-height: 2.6rem;
+    align-self: center;
+    color: #868e96;
+    padding-bottom: 2.6rem;
+}
+
+/* STYLING FOR PLAN COMPONENT */
+.container--annual-plan {
+    align-self: center;
+    display: flex;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.2rem;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.icon-and-plan{
+    display: flex;
+    flex-grow: 2;
+}
+
+.plan-price {
+    align-self: center;
+}
+
+.price {
+    font-size: 1.6rem;
+    color: #868e96;
+}
+
+.music-icon {
+    height: 6.8rem;
+    padding: 1.2rem;
+}
+
+.plan-desc {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.change-link:link,
+.change-link:visited {
+    color: hsl(245, 75%, 52%);
+    font-size: 1.6rem;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.change-link:hover,
+.change-link:active {
+    color: hsl(223, 47%, 23%);
+} 
+
+/* PAYMENT / CANCEL BUTTONS */
+.payment-proceed-btn:link,
+.payment-proceed-btn:visited {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: auto;
+    text-decoration: none;
+    padding: 1.2rem;
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-proceed-btn:hover,
+.payment-proceed-btn:active {
+    color: hsl(225, 100%, 94%)
+}
+
+.cancel-order:link,
+.cancel-order:visited {
+    text-decoration: none;
+    margin-bottom: 4.8rem;
+    color: #868e96;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.cancel-order:hover,
+.cancel-order:active {
+    color: #343a40;
+}
